@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFAB00"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".SignUp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="UselessLeaf,UselessParent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="189dp">
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="167dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:text="Here’s\nyour first\nstep with \nus! "
+                    android:textColor="@color/whiteTextColor" />
+
+                <ImageView
+                    android:layout_width="208dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/plate" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editPhone"
+                        android:hint="@string/phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#fff"
+                        android:textColor="@android:color/black"
+                        android:inputType="phone"
+                        android:text="1234567890"
+                        app:met_baseColor="@android:color/black"
+                        app:met_floatingLabel="highlight"
+                        app:met_maxCharacters="11"
+                        app:met_minCharacters="10"
+                        app:met_primaryColor="#fff"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editName"
+                        android:hint="@string/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#fff"
+                        android:textColor="@android:color/black"
+                        android:inputType="text"
+                        android:text="Sandeep"
+                        app:met_baseColor="@android:color/black"
+                        app:met_floatingLabel="highlight"
+                        app:met_primaryColor="#fff"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/editPassword"
+                        android:hint="@string/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#fff"
+                        android:textColor="@android:color/black"
+                        android:text="12345678"
+                        android:inputType="textPassword"
+                        app:met_baseColor="@android:color/black"
+                        app:met_floatingLabel="highlight"
+                        app:met_minCharacters="8"
+                        app:met_primaryColor="#fff"/>
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="165dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="6dp"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:layout_weight="1"
+                        android:text="Sign Up"
+                        android:textColor="@android:color/white"
+                        app:fButtonColor="#FFAB00"
+                        app:cornerRadius="20dp"
+                        app:shadowEnabled="true"
+                        app:shadowHeight="2dp"
+                        tools:ignore="ButtonStyle"/>
+
+
+                    <TextView
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:id="@+id/haveAccount"
+                        android:text="Already have an account?"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:weightSum="12">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/whiteTextColor" />
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Use other Methods"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/whiteTextColor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_google_plus" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
