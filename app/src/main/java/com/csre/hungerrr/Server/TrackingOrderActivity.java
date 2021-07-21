@@ -233,7 +233,7 @@ public class TrackingOrderActivity extends FragmentActivity implements OnMapRead
                             .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
 
                     //Draw Polyline between Delivery and destination
-                    GoogleDirection.withServerKey("AIzaSyAJ8vsozJHge5B5FMLVE4bc-17ia8Bmqgs")
+                    GoogleDirection.withServerKey("***********GOOGLE_DIRECTION_API_KEY************")
                             .from(yourLocation)
                             .to(userLocation)
                             .transportMode(TransportMode.DRIVING)
